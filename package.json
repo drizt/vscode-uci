@@ -1,0 +1,39 @@
+{
+  "name": "vscode-uci",
+  "displayName": "OpenWRT UCI Highlighter",
+  "description": "Syntax highlighting for the UCI config files",
+  "version": "0.0.1",
+  "publisher": "drizt",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "uci",
+        "aliases": [
+          "UCI",
+          "uci"
+        ],
+        "extensions": [
+          ".uci"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "uci",
+        "scopeName": "source.uci",
+        "path": "./syntaxes/uci.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drizt/vscode-uci"
+  }
+}

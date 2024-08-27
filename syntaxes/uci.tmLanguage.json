@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "UCI",
+  "scopeName": "source.uci",
+  "patterns": [
+    {
+      "match": "^\\s*(p|package)\\b(\\s+['\"A-z0-9]+)?",
+      "captures": {
+        "1": {
+          "name": "entity.name.tag.uci"
+        },
+        "2": {
+          "name": "support.type.property-name.uci"
+        }
+      }
+    },
+    {
+      "match": "^\\s*(c|config)\\b(\\s+['\"A-z0-9]+)?\\s*(.*)$",
+      "captures": {
+        "1": {
+          "name": "entity.name.tag.uci"
+        },
+        "2": {
+          "name": "entity.name.function.uci"
+        },
+        "3": {
+          "name": "constant.numeric.uci"
+        }
+      }
+    },
+    {
+      "match": "^\\s*(o|option|l|list)\\b(\\s+['\"A-z0-9]+)?\\s*(.*)$",
+      "captures": {
+        "1": {
+          "name": "keyword.control.config.uci"
+        },
+        "2": {
+          "name": "variable.language.uci"
+        },
+        "3": {
+          "name": "string.quoted.double.uci"
+        }
+      }
+    },
+    {
+      "match": "#.*$",
+      "name": "comment.line.number-sign.uci"
+    },
+    {
+      "match": ".*",
+      "name": "string.quoted.double.uci"
+    }
+  ]
+}
