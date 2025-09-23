@@ -43,7 +43,7 @@
       }
     },
     {
-      "match": "#.*$",
+      "match": "^\\s*?#.*$",
       "name": "comment.line.number-sign.uci"
     },
     {
