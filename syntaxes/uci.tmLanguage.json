@@ -4,7 +4,7 @@
   "scopeName": "source.uci",
   "patterns": [
     {
-      "match": "^\\s*(p|package)\\b(\\s+['\"A-z0-9]+)?",
+      "match": "^\\s*(p|package)\\b(\\s+[-_'\"A-z0-9]+)?",
       "captures": {
         "1": {
           "name": "entity.name.tag.uci"
@@ -15,7 +15,7 @@
       }
     },
     {
-      "match": "^\\s*(c|config)\\b(\\s+['\"A-z0-9]+)?\\s*(.*)$",
+      "match": "^\\s*(c|config)\\b(\\s+[-_'\"A-z0-9]+)?\\s*(.*)$",
       "captures": {
         "1": {
           "name": "entity.name.tag.uci"
@@ -29,7 +29,7 @@
       }
     },
     {
-      "match": "^\\s*(o|option|l|list)\\b(\\s+['\"A-z0-9]+)?\\s*(.*)$",
+      "match": "^\\s*(o|option|l|list)\\b(\\s+[-_'\"A-z0-9]+)?\\s*(.*)$",
       "captures": {
         "1": {
           "name": "keyword.control.config.uci"
